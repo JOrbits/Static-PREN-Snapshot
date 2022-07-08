@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://jordansuter.ch/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Jordan Suter">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>PREN</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="./PREN_files/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .text-nowrap {
+          white-space: nowrap;
+      }
+
+      .timer {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+    <script src="./PREN_files/pren-website.js.Download"></script>
+  <style></style></head>
+<body>
+    
+<header>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="http://jordansuter.ch/#" class="navbar-brand d-flex align-items-center">
+        <strong>TEAM 31</strong>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-3">
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card shadow-sm" style="width: 100%;">
+            
+            <div class="card-header">
+              <h5 class="card-title">Status</h5>
+            </div>
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <img id="webdia" src="./PREN_files/webdia-5.svg" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card shadow-sm" style="width: 100%;">
+            
+            <div class="card-header">
+              <h5 class="card-title">Laufzeit</h5>
+            </div>
+            <div class="card-body align-items-center d-flex justify-content-center">
+              <h1 class="card-title display-3 text-nowrap timer" id="timeDisplay">01:25:20</h1>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card shadow-sm" style="width: 100%;">
+            
+            <div class="card-header">
+              <h5 class="card-title">Neustes Bild</h5>
+            </div>
+            <div class="card-body align-items-center d-flex justify-content-center">
+              <img id="img" class="img-thumbnail" src="./PREN_Files/8a804284-ee8e-4635-9a10-8974bd26de1f.jpg" alt="...">
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card shadow-sm" style="width: 100%;">
+            
+            <div class="card-header">
+              <h5 class="card-title">Pflanze</h5>
+            </div>
+            <div class="card-body">
+              <h3 class="card-text display-3" id="mainQR"></h3>
+              <h3 class="card-text display-3" id="mainName"></h3>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card shadow-sm" style="width: 100%;">
+            
+            <div class="card-header">
+              <h5 class="card-title">Zielbereich</h5>
+            </div>
+            <div class="card-body" style="overflow-y: auto; height: 40vh;">
+              <p class="card-text">
+              <span>
+                </span></p><table class="table">
+                   <thead>
+                       <tr>
+                          <th scope="col">QR</th>
+                          <th scope="col">Pflanze</th>
+                   </tr></thead>
+                   <tbody id="planttable"><tr><th scope="row">1</th><td>Gewöhnliche Sonnenblume </td> </tr><tr><th scope="row">2</th><td>Gewöhnliche Sonnenblume </td> </tr><tr><th scope="row">5</th><td>Avocado </td> </tr></tbody>
+                   </table>
+               
+              <p></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card shadow-sm" style="width: 100%;">
+            
+            <div class="card-header">
+              <h5 class="card-title">Logs</h5>
+            </div>
+            <div class="card-body" style="overflow-y: auto; height: 40vh;">
+              <p class="card-text">
+              <span>
+                </span></p><table class="table">
+                   <thead>
+                       <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Level</th>
+                          <th scope="col">Nachricht</th>
+                   </tr></thead>
+                   <tbody id="logtable"><tr><th scope="row">13</th><td>Information </td> <td>Successfully sent image '5'.</td></tr><tr><th scope="row">12</th><td>Information </td> <td>Received command over ICenterControl API.</td></tr><tr><th scope="row">11</th><td>Information </td> <td>Wait for connection from ICenterControl pipe.</td></tr><tr><th scope="row">10</th><td>Information </td> <td>Halt instruction sent (1)</td></tr><tr><th scope="row">9</th><td>Information </td> <td>Exited Main-Sequence Loop.</td></tr><tr><th scope="row">8</th><td>Information </td> <td>Stop. Break command finished.</td></tr><tr><th scope="row">7</th><td>Information </td> <td>Break command invoked.</td></tr><tr><th scope="row">6</th><td>Information </td> <td>Successfully sent image '1'.</td></tr><tr><th scope="row">5</th><td>Information </td> <td>Successfully sent image '2'.</td></tr><tr><th scope="row">4</th><td>Information </td> <td>GPIO rising pin event observed.</td></tr><tr><th scope="row">3</th><td>Information </td> <td>Wait for connection from ICenterControl pipe.</td></tr><tr><th scope="row">2</th><td>Information </td> <td>Received command over ICenterControl API.</td></tr><tr><th scope="row">1</th><td>Information </td> <td>RunParcourSequence command invoked.</td></tr><tr><th scope="row">0</th><td>Information </td> <td>Start. Go command invoked.</td></tr></tbody>
+                   </table>
+               
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+    <script src="./PREN_files/bootstrap.bundle.min.js.Download"></script>
+
+      
+  
+
+</body></html>
